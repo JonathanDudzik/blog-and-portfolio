@@ -18,7 +18,6 @@
 
 .blogToolbar {
   grid-area: toolbar;
-  background-color: orange;
 }
 
 .blogSideMenu {

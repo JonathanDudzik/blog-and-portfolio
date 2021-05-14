@@ -7,7 +7,7 @@ import SideMenu from "../../components/SideMenu/sideMenu"
 import Post from "../../components/Post/post"
 
 // CSS Module import
-import * as styles from "./blog.module.css"
+import * as styles from "./entries.module.css"
 
 // markup
 export default function Posts() {
@@ -22,10 +22,10 @@ export default function Posts() {
       <div className={styles.blogMain}>
         <main>
           <Post 
-            title={ "First Blog Post" }
+            title={ "A whole lotta post!" }
             date={ "05/12/2021" }
           >
-            <p>This is where your main text would be!</p>
+            <p>Division</p>
             <ul>
               <li>You can</li>
               <li>have as much</li>

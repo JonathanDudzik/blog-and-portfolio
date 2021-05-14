@@ -1,0 +1,23 @@
+.ghostbar {
+  height: 100%;
+  background-color: transparent;
+  color: #fff;
+  padding: 0 3%;
+  display: flex;
+  flex-direction: row;
+  justify-content:start;
+  z-index: 200;
+  transition: background-color .2s linear;
+  transition-property: background-color;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+  transition-delay: 0s;
+}
+
+.ghostbar div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  width: 50%;
+}

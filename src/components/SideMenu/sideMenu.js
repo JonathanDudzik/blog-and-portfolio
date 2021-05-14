@@ -5,15 +5,19 @@ import { Link } from "gatsby"
 const links = [
   {
     text: "Addition",
-    url: "/blog/latest",
+    url: "/entries/addition",
   },
   {
     text: "Subtraction",
-    url: "/blog/subtraction",
+    url: "/entries/subtraction",
   },
   {
     text: "Multiplication",
-    url: "/blog/multiplication",
+    url: "/entries/multiplication",
+  },
+  {
+    text: "Division",
+    url: "/entries/division",
   }
 ]
 

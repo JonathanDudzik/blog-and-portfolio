@@ -3,7 +3,7 @@ import * as React from "react"
 import { Link } from "gatsby"
 
 // CSS Module import
-import * as styles from "./toolbar.module.css"
+import * as styles from "./ghostbar.module.css"
 
 // import assets
 import logo from "../../images/long-logo.png"
@@ -23,9 +23,9 @@ const links = [
   }
 ]
 
-const Toolbar = () => (
-  <div className={styles.toolbar}>
-    <div>   
+const Ghostbar = () => (
+  <div className={styles.ghostbar}>
+    <div>
       <img 
         style={{ height: `80%` }}
         src={logo}
@@ -46,4 +46,4 @@ const Toolbar = () => (
   </div>
 )
 
-export default Toolbar
+export default Ghostbar

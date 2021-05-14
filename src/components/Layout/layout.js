@@ -12,7 +12,7 @@ export default function Layout(props) {
         {props.toolbar}
       </div>
       <div className={styles.layoutMain}>
-        <p>{props.main}</p>
+        {props.main}
       </div>
     </div>
   )

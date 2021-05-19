@@ -52,8 +52,3 @@
 Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
 
 [<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
-
-Lessons Learned:
-- Passing PROPS to componenets is different than passing CHILDREN to components: Regular props are passed as attibutes while children are passed nested inbetween the closing and opening tags of the parent element.
-- CSS grid template areas have ONLY one set of quotation marks per line.
-- Calculate height like this: min-height: calc(100vh - var(--toolbar-height)); where -toolbar-height is defined as a css custom property

@@ -25,24 +25,20 @@ const links = [
 
 const Toolbar = () => (
   <div className={styles.toolbar}>
-    <div>   
-      <img 
-        style={{ height: `80%` }}
-        src={logo}
-        alt="Logo"
-      />    
-    </div>
-    <div>
-      {links.map(link => (
-        <Link 
-          to={link.url}
-          key={link.url}
-          style={{ paddingRight: `5%`, fontSize: `large` }}
-        >
-          {link.text}
-        </Link>
-      ))}
-    </div>
+    <img 
+      style={{ height: `80%` }}
+      src={logo}
+      alt="Logo"
+    />    
+    {links.map(link => (
+      <Link 
+        to={link.url}
+        key={link.url}
+        style={{ paddingRight: `5%`, fontSize: `large` }}
+      >
+        {link.text}
+      </Link>
+    ))}
   </div>
 )
 

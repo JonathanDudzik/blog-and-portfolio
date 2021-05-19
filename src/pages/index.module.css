@@ -1,18 +1,80 @@
-.hero {
+.heroGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70vh;
+}
+
+.heroBackground {
   background: linear-gradient(145deg,#0d47a1,#42a5f5);
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   position: absolute;
   width: 100%;
   min-height: 480px;
   height: 80vh;
   max-height: 560px;
   box-sizing: border-box;
-  padding: 48px 48px 32px;
-  overflow: hidden;
   transform: skewY(8deg);
   transform-origin: 100%;
+}
+
+.heroForeground {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  background: transparent;
+  z-index: 2;
+}
+
+.heroImage {
+  height: 65vh;
+  position: absolute;
+  top: 5%;
+  transform: rotate(-8deg);
+}
+
+.heroText {
+  width: 50%;
+  position: relative;
+  top: 25%;
+  left: 35%;
+}
+
+.heroText h1 {
+  width: 80%;
+  color: #fff;
+}
+
+.avatarContainer {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50vh;
+  align-items: center;
+  justify-items: center;
+}
+
+.avatarDiv1 {
+  height: 100%;
+}
+
+.avatarDiv2 {
+  justify-self: start;
+  padding-right: 10%;
+}
+
+.avatarImage {
+  height: 100%;
+}
+
+.madeWithDescription {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 10%
+}
+
+.madeWithGrid {
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr 6fr;
+  grid-auto-rows: minmax(20vh, auto);
+  align-items: center;
+  padding: 0px 3%
 }

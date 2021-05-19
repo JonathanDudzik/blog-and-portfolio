@@ -1,15 +1,14 @@
 :root {
   /*
-    by defining the sizes of toolbar and side menu in a var,
+    by defining the sizes of toolbar in a var,
     can do calcuations with them later
   */
   --toolbar-height: 64px;
-  --side-menu-width: 268px;
 }
 
 .layoutGrid {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 1fr;
   grid-template-rows: var(--toolbar-height) auto;
   grid-template-areas: 
     "toolbar    toolbar"
@@ -18,7 +17,7 @@
 
 .layoutToolbar {
   grid-area: toolbar;
-  z-index: 200;
+  z-index: 3;
 }
 
 .layoutMain {

@@ -22,7 +22,7 @@ const Hero = () => (
       <div className={styles.heroForeground}>
         <div className={styles.heroText}>
           <h1>
-            Discovery the simplicity of code!
+            Discover the simplicity of code!
           </h1>
         </div>
         <div>

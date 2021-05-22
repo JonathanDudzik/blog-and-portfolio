@@ -26,7 +26,7 @@ const links = [
 const Ghostbar = () => (
   <div className={styles.ghostbar}>
     <img 
-      style={{ height: `80%` }}
+      className={styles.ghostbarImg}
       src={logo}
       alt="Logo"
     />    

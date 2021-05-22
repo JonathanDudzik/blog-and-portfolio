@@ -26,7 +26,7 @@ const links = [
 const Toolbar = () => (
   <div className={styles.toolbar}>
     <img 
-      style={{ height: `80%` }}
+      className={styles.toolbarImg}
       src={logo}
       alt="Logo"
     />    

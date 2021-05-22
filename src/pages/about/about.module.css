@@ -6,21 +6,20 @@
   --toolbar-height: 64px;
 }
 
-.blogGrid {
+.aboutGrid {
   display: grid;
-  grid-template-columns: auto var(--side-menu-width);
+  grid-template-columns: 1fr;
   grid-template-rows: var(--toolbar-height) auto;
   grid-template-areas: 
-    "toolbar  toolbar"
-    "main     main";
+    "toolbar"
+    "main";
 }
 
-.blogToolbar {
+.aboutToolbar {
   grid-area: toolbar;
 }
 
-.blogMain {
+.aboutMain {
   grid-area: main;
-  background-color: grey;
   min-height: calc(100vh - var(--toolbar-height));
 }

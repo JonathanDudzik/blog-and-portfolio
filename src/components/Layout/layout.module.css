@@ -11,8 +11,8 @@
   grid-template-columns: 1fr;
   grid-template-rows: var(--toolbar-height) auto;
   grid-template-areas: 
-    "toolbar    toolbar"
-    "main       main";
+    "toolbar"
+    "main";
 }
 
 .layoutToolbar {

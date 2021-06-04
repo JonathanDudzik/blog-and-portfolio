@@ -21,7 +21,7 @@ const Hero = () => (
       <div className={styles.heroBackground}></div>
       <div className={styles.heroForeground}>
         <div className={styles.heroText}>
-          <h1>
+          <h1 style={{ fontSize: `xx-large` }}>
             Discover the simplicity of code!
           </h1>
         </div>
@@ -46,8 +46,8 @@ const Hero = () => (
         <h2>Hello! My name is Jonathan Wesley Dudzik.</h2>
         <p>
           I am a Software Developer, Instructional Designer, 
-          and burgeoning Software Architect located in Raleigh, NC.
-          Check out the about page to see my experience and skills. 
+          and Software Architect located in Raleigh, NC.
+          Check out the Resume page to see my experience and skills. 
           Also please checkout my blog. 
           I am currently writing tutorials for using the Rust programming 
           language to solve math problems.

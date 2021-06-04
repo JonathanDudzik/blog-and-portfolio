@@ -1,3 +1,15 @@
-li {
-  color: skyblue;
-}
+  .flexContainer {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+
+  }
+
+  .listItems {
+    list-style: none;
+  }
+
+  .listButtons {
+    margin: 0 10%;
+    color: #56626D;
+  }

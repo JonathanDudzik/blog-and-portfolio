@@ -21,30 +21,4 @@ const About = () => {
   )
 }
 
-const labels = [
-  "Project Management",
-  "Organizational Training",
-  "UI and UX Design",
-  "Wordpress Development",
-  "Linux",
-  "HTML, CSS, JavaScript",
-  "API integrations",
-  "Git and SVN (version control)",
-  "WCAG 2.1 and Section 508",
-  "Figma (mockups)",
-  "Vue.js",
-  "React",
-  "CSS Frameworks",
-  "Screencasts",
-  "AWS S3",
-  "AWS EC2",
-  "AWS Cloud 9 IDE",
-  "AWS Dynamo DB",
-  "No SQL Databases",
-  "Firebase",
-  "Agile",
-  "Technical Documentation"
-]
-
-
 export default About

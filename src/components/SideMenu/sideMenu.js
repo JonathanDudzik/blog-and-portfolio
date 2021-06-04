@@ -2,35 +2,37 @@
 import * as React from "react"
 import { Link } from "gatsby"
 
-const links = [
-  {
-    text: "Addition",
-    url: "/entries/addition",
-  },
-  {
-    text: "Subtraction",
-    url: "/entries/subtraction",
-  },
-  {
-    text: "Multiplication",
-    url: "/entries/multiplication",
-  },
-  {
-    text: "Division",
-    url: "/entries/division",
-  }
-]
+// CSS Module import
+import * as styles from "./sideMenu.module.css"
 
-const SideMenu = props => (
-  <ul>
-    {links.map(link => (
-        <li key={link.url} style={{ marginRight: `5%` }}>
-          <Link to={link.url}>
-            {link.text}
-          </Link>
-        </li>
-    ))}
-  </ul>
-)
+function btnNav() {
+  window.open(('https://play.rust-lang.org/'), "_blank");
+}
+
+const SideMenu = (props) => {
+  console.log(props.data);
+  return (
+    <div className={ styles.flexContainer }>
+      <ul>
+        {props.data.allMarkdownRemark.edges.map(({node}) => (
+            <li key={node.id} className={ styles.listItems }>
+              <Link to={node.fields.slug}>
+                {node.frontmatter.title}
+              </Link>
+            </li>
+        ))}
+      </ul>
+
+      <hr></hr>
+
+      <button 
+        onClick={ btnNav }
+        className={ styles.listButtons }
+      >
+        Rust Playground
+      </button>
+    </div>
+  )
+}
 
 export default SideMenu

@@ -1,22 +1,60 @@
 // import React services
 import React from "react"
+import { graphql } from "gatsby"
+
+// import components
+import Toolbar from "../Toolbar/toolbar"
+import SideMenu from "../SideMenu/sideMenu"
 
 // CSS Module import
 import * as styles from "./post.module.css"
 
 // markup
-export default function Post(props) {
+export default function BlogPost({ data }) {
+  const post = data.markdownRemark
   return (
-    <div>
-      <h1 className={styles.title}>
-        {props.title}
-      </h1>
-      <h2 className={styles.date}>
-        {props.date}
-      </h2>
-      <div>
-        {props.children}
+    <div className={styles.blogGrid}>
+      <div className={styles.blogToolbar}>
+        <Toolbar />
+      </div>
+      <div className={styles.blogSideMenu}>
+        <SideMenu data={data} />
+      </div>
+      <div className={styles.blogMain}>
+        <main>
+          <h1>{post.frontmatter.title}</h1>
+          <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        </main>
       </div>
     </div>
   )
 }
+
+export const query = graphql`
+  query($slug: String!) {
+    allMarkdownRemark(
+      sort: { 
+        fields: [frontmatter___date], 
+        order: DESC 
+      }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            title
+            date(formatString: "DD MMMM, YYYY")
+          }
+          fields {
+            slug
+          }
+        }
+      }
+    }
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      html
+      frontmatter {
+        title
+      }
+    }
+  }
+`

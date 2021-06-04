@@ -1,6 +1,32 @@
 module.exports = {
   siteMetadata: {
-    title: "portfolio-react",
+    title: "Jonathan's Portfolio",
+    description: "Jonathan's personal portfolio",
+    links: [
+      {
+        text: "Home",
+        url: "/",
+      },
+      {
+        text: "Blog",
+        // this link can be the latest post slug
+        url: "/entries/welcome",
+      },
+      {
+        text: "Resume",
+        url: "/about",
+      }
+    ]
   },
-  plugins: ["gatsby-plugin-gatsby-cloud"],
+  plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `src`,
+        path: `${__dirname}/src/`,
+      },
+    },
+    `gatsby-transformer-remark`,
+    "gatsby-plugin-gatsby-cloud"
+  ],
 };

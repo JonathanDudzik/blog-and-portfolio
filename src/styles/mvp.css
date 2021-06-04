@@ -23,7 +23,7 @@
     --width-content: 1080px;
 }
 
-/*
+/* 
 @media (prefers-color-scheme: dark) {
     :root {
         --color: #0097fc;
@@ -36,7 +36,7 @@
         --color-text: #f7f7f7;
         --color-text-secondary: #aaa;
     }
-}
+} 
 */
 
 /* Layout */
@@ -190,15 +190,14 @@ nav ul li ul li a {
 /* Typography */
 code,
 samp {
-    background-color: var(--color-accent);
+    background-color: #333;
     border-radius: var(--border-radius);
-    color: var(--color-text);
+    color: #fdc502;
     display: inline-block;
     margin: 0 0.1rem;
     padding: 0 0.5rem;
-    color: #8A6534;
     padding: 4px;
-    font-size: 1.25rem;
+    font-size: inherit;
 }
 
 details {
@@ -274,7 +273,7 @@ sup {
 
 /* Links */
 a {
-    color: var(--color);
+    color: var(--color-accent);
     display: inline-block;
     text-decoration: none;
 }

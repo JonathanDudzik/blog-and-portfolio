@@ -1,6 +1,6 @@
 ---
 title: "Rounding with Rust"
-date: "2021-05-01"
+date: "2021-04-15"
 ---
 
 One of the most basic operations we may want to do is to approximate a number to a specific place value. In many cases, you don’t need the exact value; an approximate number is good enough. The process of approximating is called rounding.

@@ -25,11 +25,16 @@ const Toolbar = () => {
   )
   return(
     <div className={styles.toolbar}>
-      <img 
+      <a
+        href="/"
         className={styles.toolbarImg}
-        src={logo}
-        alt="Logo"
-      />    
+      >
+        <img 
+          className={styles.toolbarImg}
+          src={logo}
+          alt="Logo"
+        />    
+      </a>
       {data.site.siteMetadata.links.map(link => (
         <Link 
           to={link.url}

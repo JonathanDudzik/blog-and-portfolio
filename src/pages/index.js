@@ -65,7 +65,7 @@ const Hero = () => (
 
     <div className={styles.madeWithGrid}>
       <div>
-          <a href="gatsbyjs.com">
+          <a href="https://www.gatsbyjs.com/">
             <img 
                   src={gatsby}
                   style={{ height: `10vh` }}

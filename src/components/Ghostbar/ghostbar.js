@@ -25,11 +25,16 @@ const Ghostbar = () => {
   )
   return (
     <div className={styles.ghostbar}>
-      <img 
+       <a
+        href="/"
         className={styles.ghostbarImg}
-        src={logo}
-        alt="Logo"
-      />    
+      >
+        <img 
+          className={styles.ghostbarImg}
+          src={logo}
+          alt="Logo"
+        />    
+      </a>
       {data.site.siteMetadata.links.map(link => (
         <Link 
           to={link.url}

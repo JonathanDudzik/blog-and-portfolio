@@ -13,7 +13,7 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "npx playwright test"
+    "test": "npx playwright install-deps && npx playwright test"
   },
   "dependencies": {
     "gatsby": "^3.4.1",

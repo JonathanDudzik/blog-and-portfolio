@@ -1,4 +1,4 @@
-name: Playwright tests
+name: playwright-tests
 on: [push]
 jobs:
   run-playwright-tests:
@@ -7,4 +7,4 @@ jobs:
       - uses: microsoft/playwright-github-action@v1
       - name: Run your tests
       - run: npm test
-      
+ 

@@ -1,7 +1,7 @@
 name: playwright-tests
 on: [pull_request]
 jobs:
-  run-playwright-tests:
+  setup-testing-env:
     runs-on: ubuntu-latest
 
     steps:
@@ -18,5 +18,11 @@ jobs:
       - name: build site and serve on localhost:8000
         run: npm run build && npm run serve
   
+  run-playwright-tests:
+    needs: setup-testing-env
+    
+    runs-on: ubuntu-latest
+    
+    steps:
       - name: test localhost build
-        run: npm test
+        run: npm test    

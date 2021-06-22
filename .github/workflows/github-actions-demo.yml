@@ -5,6 +5,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+
       - uses: actions/setup-node@v1
-      - name: Install dependencies and run tests
-        run: npm ci && npm test
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: build site and serve on localhost:8000
+        run: npm run build && npm run serve
+  
+      - name: test localhost build
+        run: npm test

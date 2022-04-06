@@ -22,7 +22,7 @@ const Hero = () => (
       <div className={styles.heroForeground}>
         <div className={styles.heroText}>
           <h1 style={{ fontSize: `xx-large` }}>
-            Discover the simplicity of code.
+            Hello! My name is Jonathan Wesley Dudzik.
           </h1>
         </div>
         <div>
@@ -43,14 +43,12 @@ const Hero = () => (
         />
       </div>
       <div className={styles.avatarDiv2}>
-        <h2>Hello! My name is Jonathan Wesley Dudzik.</h2>
-        <p>
-          I am a Software Developer, Instructional Designer, 
-          and Software Architect located in Raleigh, NC.
-          Check out the Resume page to see my experience and skills. 
-          Also please checkout my blog. 
-          I am currently writing tutorials for using the Rust programming 
-          language to solve math problems.
+        <p style={{ fontSize: `x-large` }}>
+          I am a software developer, UI/UX aficionado, 
+          and agile practicioner.
+        </p> 
+        <p style={{ fontSize: `x-large` }}>
+          Check out my blog to read about React, Typescript, and Rails and a JSON API.
         </p>
       </div>
     </div>
@@ -59,7 +57,7 @@ const Hero = () => (
 
     <h2 className={styles.madeWithDescription}>
       I have used the following programs, standards, 
-      and libraries to improved the development 
+      and libraries to improve the development 
       experience and speed of building this site:
     </h2>
 

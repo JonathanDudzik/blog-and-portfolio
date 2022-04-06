@@ -9,14 +9,14 @@ const Resume = () => (
     <div className={styles.leftGrid}>
       <div className={styles.contact}>
         <h2>Jonathan Wesley Dudzik</h2>
-        <h3>Software Architect</h3>
+        <h3>Software Developer</h3>
         <p>Jonathan.d.wesley@gmail.com</p>
         <p>419-944-4290</p>
         <p>2627 Dwight Place</p>
         <p>Raleigh, NC</p>
       </div>
       
-      <h2 className={styles.header}>Technical Skills</h2>
+      <h2 className={styles.header} style={{ fontSize: `x-large` }}>Summary of Skills</h2>
       
       <div className={styles.skillsList}>
         {/* five plus years */}
@@ -48,7 +48,7 @@ const Resume = () => (
         <p>Technical Documentation</p>
       </div>
 
-      <h2 className={styles.header}>Education</h2>
+      <h2 className={styles.header} style={{ fontSize: `x-large` }}>Education</h2>
 
       <div className={styles.educationList}>
         <p style={{ marginBottom: `0px` }}>Bachelor of Bussiness Communication</p>

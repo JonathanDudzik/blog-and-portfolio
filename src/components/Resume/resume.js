@@ -8,8 +8,8 @@ const Resume = () => (
   <div className={styles.resumeGrid}>
     <div className={styles.leftGrid}>
       <div className={styles.contact}>
-        <h2>Jonathan Wesley Dudzik</h2>
-        <h3>Software Developer</h3>
+        <h1 style={{ fontSize: `xx-large` }}>Jonathan Wesley Dudzik</h1>
+        <h2 style={{ fontSize: `large` }}>Software Developer</h2>
         <p>Jonathan.d.wesley@gmail.com</p>
         <p>419-944-4290</p>
         <p>2627 Dwight Place</p>
@@ -19,33 +19,33 @@ const Resume = () => (
       <h2 className={styles.header} style={{ fontSize: `x-large` }}>Summary of Skills</h2>
       
       <div className={styles.skillsList}>
-        {/* five plus years */}
-        <h3>Five plus years of experience</h3>
-        <p>Project Management</p>
-        <p>Organizational Training</p>
-        <p>UI and UX Design</p>
-        <p>Wordpress Development</p>
-        <p>Linux</p>
+        <h3>Soft Skills:</h3>
+        <p>Servant leadership</p>
+        <p>Teaching and mentorship</p>
+        <p>Problem solving</p>
+        <p>Open-mindedness</p>
+        <p>Clear communication</p>
+        <p>Independent learning</p>
 
-        {/* three plus years */}
-        <h3>Three plus years of experience</h3>
-        <p>HTML, CSS, JavaScript</p>
-        <p>API integrations</p>
-        <p>Git and SVN (version control)</p>
-        <p>WCAG 2.1 and Section 508</p>
-        <p>Figma (mockups)</p>
-        <p>Vue.js</p>
-        <p>React</p>
-        <p>CSS Frameworks</p>
-        <p>Screencasts</p>
-        <p>AWS S3</p>
-        <p>AWS EC2</p>
-        <p>AWS Cloud 9 IDE</p>
-        <p>AWS Dynamo DB</p>
-        <p>No SQL Databases</p>
-        <p>Firebase</p>
-        <p>Agile</p>
-        <p>Technical Documentation</p>
+        <h3 style={{ paddingTop: `2rem` }}>Front End UI:</h3>
+        <p>HTML5, CSS3, JavaScript</p>
+        <p>VueJS, ReactJS, jQuery</p>
+        <p>Bootstrap, Bulma, Material Design</p>
+        <p>Ajax (Fetch and Axios)</p>
+        <p>UI mockups (Figma)</p>
+        <p>Web Accessibility (WCAG)</p>
+
+        <h3 style={{ paddingTop: `2rem` }}>DevOps and Backend:</h3>
+        <p>Git version control</p>
+        <p>Node.js</p>
+        <p>Ruby</p>
+        <p>Shell</p>
+        <p>Heroku and Firebase</p>
+        <p>Google Cloud and Azure</p>
+        <p>Non-relational databases</p>
+        <p>Relational SQL databases</p>
+        <p>Agile methodology</p>
+        
       </div>
 
       <h2 className={styles.header} style={{ fontSize: `x-large` }}>Education</h2>
@@ -60,11 +60,13 @@ const Resume = () => (
     <div className={styles.rightFlex}>
       <h3 style={{ marginBottom: `0px` }}>Software Architect | Maverick Solutions</h3>
       <p style={{ margin: `0px` }}><i>November 2020 - Current</i></p>
-      <p>Manage development projects and development team after being promoted to Software Architect after 6 months</p>
-      <p>Persuaded company leadership to implement pair programming which decreased time spent on difficult projects and sped up onboarding of new developers by 1 month</p>
-      <p>Guided company leadership in a restructure of the development team that decreased developer turn over - achieved this by implementing agile principles and a culture of servant leadership and mentoring</p>
+      <p>Write clean, self documenting, and modular code</p>
+      <p>Write unit and end-to-end (system) tests for all new features</p>
+      <p>Manage Agile projects and development team</p>
+      <p>Pair program to decrease time spent on difficult projects and speed up onboarding of new developers</p>
+      <p>Assisted in a restructure of the development team that decreased developer turn over - achieved this by implementing agile principles and a culture of servant leadership and mentoring</p>
       <p>Took on new development project that was not anticipated to be completed on time due to the unexpected termination of Lead Developer - project completed on-time with 74 commits and 39,000 lines of code</p>
-      <p>Refactored 24,953 lines of undocumented jQuery code that was causing many errors into 24,559 lines of well commented modular code without any application downtime</p>
+      <p>Refactored 24,953 lines of undocumented jQuery code that was causing errors</p>
 
       <h3 style={{ marginBottom: `0px` }}>Administrative Officer II | North Carolina DHHS</h3>
       <p style={{ margin: `0px` }}><i>March 2018 - November 2020</i></p>

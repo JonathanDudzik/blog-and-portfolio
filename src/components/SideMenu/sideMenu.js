@@ -6,7 +6,7 @@ import { Link } from "gatsby"
 import * as styles from "./sideMenu.module.css"
 
 function btnNav() {
-  window.open(('https://play.rust-lang.org/'), "_blank");
+  window.open(('https://codesandbox.io/s/rl74rn6q7q'), "_blank");
 }
 
 const SideMenu = (props) => {
@@ -29,7 +29,7 @@ const SideMenu = (props) => {
         onClick={ btnNav }
         className={ styles.listButtons }
       >
-        Rust Playground
+        React Playground
       </button>
     </div>
   )

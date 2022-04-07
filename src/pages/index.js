@@ -22,7 +22,7 @@ const Hero = () => (
       <div className={styles.heroForeground}>
         <div className={styles.heroText}>
           <h1 style={{ fontSize: `xx-large` }}>
-            Hello! My name is Jonathan Wesley Dudzik.
+            Explore the world of software development.
           </h1>
         </div>
         <div>
@@ -43,6 +43,9 @@ const Hero = () => (
         />
       </div>
       <div className={styles.avatarDiv2}>
+        <h2>
+          Hello! My name is Jonathan Wesley Dudzik.
+        </h2>
         <p style={{ fontSize: `x-large` }}>
           I am a software developer, UI/UX aficionado, 
           and agile practicioner.
@@ -61,7 +64,7 @@ const Hero = () => (
       experience and speed of building this site:
     </h2>
 
-    <div className={styles.madeWithGrid}>
+    <div className={styles.madeWithGrid} style={{backgroundColor: 'whitesmoke'}}>
       <div>
           <a href="https://www.gatsbyjs.com/">
             <img 

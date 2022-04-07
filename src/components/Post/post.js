@@ -21,8 +21,9 @@ export default function BlogPost({ data }) {
         <SideMenu data={data} />
       </div>
       <div className={styles.blogMain}>
-        <main>
+        <main className={styles.markdown}>
           <h1>{post.frontmatter.title}</h1>
+          <p><strong>{post.frontmatter.date}</strong></p>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </main>
       </div>
@@ -42,7 +43,7 @@ export const query = graphql`
         node {
           frontmatter {
             title
-            date(formatString: "DD MMMM, YYYY")
+            date
           }
           fields {
             slug
@@ -54,6 +55,7 @@ export const query = graphql`
       html
       frontmatter {
         title
+        date
       }
     }
   }

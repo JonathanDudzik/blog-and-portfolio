@@ -10,7 +10,7 @@ FastAPI is a modern and lightweight python server-side framework. For the first 
 ## Why Astro*
 [Astro](https://astro.build/) is an up-and-coming static site generator that makes it possible to ship less JavaScript to the browser by using the [Islands Architecture](https://jasonformat.com/islands-architecture/) to include only the JavaScript nessesary for updating the browser with dynamic components (those that depend on reactive state that changes based on user interaction). For non-dynamic components, Astro will convert them to pure HTML. This is in sharp contrast to front end frameworks that create the entire app by sending only JavaScript to the browser.
 
-Astro has its own template language, but it also supports writing components in 8 other front end frameworks, which means you can create Astro components with React!
+> Astro has its own template language, but it also supports writing components in 8 other front end frameworks, which means you can create Astro components with React!
 
 ## Why TypeScript
 JavaScript is a flexible language: Functions to not have to be pure, asynchonious functions can be [infinitely nested](https://dev.to/somedood/please-don-t-nest-promises-3o1o), automatic garbage collection can give users a false sense of security, and types are assigned at runtime. With all that flexibilty comes a great deal of responsibilty to write "good" JavaScript. Thankfully there are tools available to help us: Linters, formatters, editor extensions, and TypeScript. I like TypeScript because it makes me think about my complex types, how I am interacting with them, and what I am returning from my functions (even when *void*).

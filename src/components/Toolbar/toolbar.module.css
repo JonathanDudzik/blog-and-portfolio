@@ -3,14 +3,21 @@
   height: 100%;
   background-color: #1976d2;
   color: #fff;
-  padding: 0 3%;
+  padding-left: 3%;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,.3);
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
 }
 
 .toolbarImg {
   height: 80%;
   max-width: 100%;
+}
+
+.toolbarLinks {
+  display: flex;
+  flex-direction: row;
+  margin-right: 4%;
 }

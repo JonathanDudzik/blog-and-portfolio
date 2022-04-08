@@ -21,7 +21,7 @@ const Hero = () => (
       <div className={styles.heroBackground}></div>
       <div className={styles.heroForeground}>
         <div className={styles.heroText}>
-          <h1 style={{ fontSize: `xx-large` }}>
+          <h1>
             Explore the world of software development.
           </h1>
         </div>
@@ -46,11 +46,11 @@ const Hero = () => (
         <h2>
           Hello! My name is Jonathan Wesley Dudzik.
         </h2>
-        <p style={{ fontSize: `x-large` }}>
+        <p>
           I am a software developer, UI/UX aficionado, 
           and agile practicioner.
         </p> 
-        <p style={{ fontSize: `x-large` }}>
+        <p>
           Check out my blog to read about React, Typescript, and Rails and a JSON API.
         </p>
       </div>

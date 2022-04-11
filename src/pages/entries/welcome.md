@@ -1,6 +1,5 @@
 ---
 title: "Using FastAPI and Astro"
-date: "03/24/2022"
 ---
 I will be working on creating a new blog with a [FastAPI](https://fastapi.tiangolo.com/) backend and an Astro, TypeScript, React front end! See below for a rundown of why I am choosing that tech-stack.
 

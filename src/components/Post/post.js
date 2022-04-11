@@ -23,7 +23,6 @@ export default function BlogPost({ data }) {
       <div className={styles.blogMain}>
         <main className={styles.markdown}>
           <h1>{post.frontmatter.title}</h1>
-          <p><strong>{post.frontmatter.date}</strong></p>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </main>
       </div>
@@ -35,15 +34,14 @@ export const query = graphql`
   query($slug: String!) {
     allMarkdownRemark(
       sort: { 
-        fields: [frontmatter___date], 
-        order: DESC 
+        fields: [frontmatter___title], 
+        order: ASC 
       }
     ) {
       edges {
         node {
           frontmatter {
             title
-            date
           }
           fields {
             slug
@@ -55,7 +53,6 @@ export const query = graphql`
       html
       frontmatter {
         title
-        date
       }
     }
   }

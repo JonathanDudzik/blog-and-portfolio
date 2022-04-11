@@ -1,6 +1,5 @@
 ---
 title: "Automated CI Testing"
-date: "06.25.2021"
 ---
 
 Before getting into the technical stuff, I want to mention a foundational concept I had to learn about CI/CD: 

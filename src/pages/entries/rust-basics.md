@@ -2,7 +2,32 @@
 title: "Rust: Basic Concepts"
 ---
 
-This is a special post where I show some basic understanding of the Rust language by creating a simple algorithm that solves basic math problems.
+This blog entry will help you learn the Rust programming language by creating a simple algorithm that solves basic math problems.
+
+Though I do try to explain each new topic comprehensively, a basic understanding of the following concepts will be helpful.
+
+**Foundational programming concepts:**
+1. function declaration
+1. parameters
+1. arguments
+1. methods
+1. language libraries
+1. loop iterations
+1. the basic meaning of true/false
+1. mutability
+1. and what String and Number types are
+
+**Foundational math concepts:**
+1. Some basic math knowledge like addition
+1. subtraction
+1. multiplication
+1. division
+1. whole numbers
+1. integers
+1. the number line
+1. and decimals
+
+If you would like to learn or refresh your knowledge in these areas, I suggest you check out ***[Free Code Camp](https://www.freecodecamp.org/)*** for foundational programming knowledge, and ***[Openstax's free math books](https://openstax.org/subjects/math)*** for the foundation math.
 
 This section serves more as a gentle introduction to some common Rust syntax and features.
 We will create a Rust program that performs the basic arithmetic operation of addition.

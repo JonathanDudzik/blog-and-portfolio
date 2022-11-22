@@ -10,8 +10,8 @@
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
+    "build": "gatsby build --no-uglify",
+    "serve": "gatsby serve --port 8000",
     "clean": "gatsby clean",
     "test": "npx playwright install && npx playwright test"
   },

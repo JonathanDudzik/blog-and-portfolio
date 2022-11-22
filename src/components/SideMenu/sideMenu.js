@@ -5,12 +5,8 @@ import { Link } from "gatsby"
 // CSS Module import
 import * as styles from "./sideMenu.module.css"
 
-function reactNav() {
-  window.open(('https://codesandbox.io/s/rl74rn6q7q'), "_blank");
-}
-
-function astroNav() {
-  window.open(('https://astro.new/'), "_blank");
+function btnNav() {
+  window.open(('https://go.dev/play/'), "_blank");
 }
 
 const SideMenu = (props) => {
@@ -33,7 +29,7 @@ const SideMenu = (props) => {
         onClick={ astroNav }
         className={ styles.listButtons }
       >
-        Astro Playground
+        Go Playground
       </button>
     </div>
   )

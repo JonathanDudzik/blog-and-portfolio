@@ -19,5 +19,3 @@ In all my writing, I try to explain new concepts in detail. However, I find you 
 - GitHub as a platform for exploring source code
 
 The posts are listed in descending chronological order along the right hand side menu. Below the listing of posts, there is a button that will bring up the Go Playground in a new tab. The playground is useful for quickly testing out Go code in a sand-boxed environment.
-
-**Enjoy!**

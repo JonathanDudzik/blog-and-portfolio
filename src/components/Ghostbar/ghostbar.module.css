@@ -6,9 +6,16 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
 }
 
 .ghostbarImg {
   height: 80%;
   max-width: 100%;
+}
+
+.ghostbarLinks {
+  display: flex;
+  flex-direction: row;
+  margin-right: 4%;
 }

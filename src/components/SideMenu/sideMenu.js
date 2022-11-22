@@ -24,9 +24,9 @@ const SideMenu = (props) => {
       </ul>
 
       <hr></hr>
-
+      
       <button 
-        onClick={ btnNav }
+        onClick={ astroNav }
         className={ styles.listButtons }
       >
         Go Playground

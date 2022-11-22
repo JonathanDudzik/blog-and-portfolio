@@ -1,6 +1,5 @@
 ---
-title: "Basic Concepts of Rust"
-date: "2021-05-01"
+title: "Rust: Basic Concepts"
 ---
 
 This blog entry will help you learn the Rust programming language by creating a simple algorithm that solves basic math problems.

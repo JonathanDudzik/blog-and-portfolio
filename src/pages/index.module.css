@@ -28,6 +28,7 @@
   height: 65vh;
   position: absolute;
   top: 5%;
+  right: 5%;
   transform: rotate(-8deg);
 }
 
@@ -39,6 +40,7 @@
 }
 
 .heroText h1 {
+  font-size: xx-large;
   width: 80%;
   color: #fff;
 }
@@ -60,6 +62,10 @@
   padding-right: 10%;
 }
 
+.avatarDiv2 p {
+  font-size: x-large;
+}
+
 .avatarImage {
   height: 100%;
 }
@@ -77,4 +83,42 @@
   grid-auto-rows: minmax(20vh, auto);
   align-items: center;
   padding: 0px 3%
+}
+
+@media (max-width: 900px) {
+  .heroImage {
+    height: 45vh;
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    transform: rotate(-8deg);
+  }
+}
+
+@media (max-width: 700px) {
+  .heroImage {
+    /* height: 45vh;
+    top: 120px; */
+    display: none;
+  }
+
+  .heroText {
+    width: 150%;
+    position: relative;
+    top: 25%;
+    left: 50%;
+  }
+
+  .avatarDiv1 {
+    height: 50%;
+  }
+
+  .avatarDiv2 h2 {
+    font-size: large;
+  }
+
+  .avatarDiv2 p {
+    font-size: small;
+  }
+
 }

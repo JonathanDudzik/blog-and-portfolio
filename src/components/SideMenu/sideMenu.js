@@ -6,7 +6,7 @@ import { Link } from "gatsby"
 import * as styles from "./sideMenu.module.css"
 
 function btnNav() {
-  window.open(('https://play.rust-lang.org/'), "_blank");
+  window.open(('https://go.dev/play/'), "_blank");
 }
 
 const SideMenu = (props) => {
@@ -24,12 +24,12 @@ const SideMenu = (props) => {
       </ul>
 
       <hr></hr>
-
+      
       <button 
         onClick={ btnNav }
         className={ styles.listButtons }
       >
-        Rust Playground
+        Go Playground
       </button>
     </div>
   )

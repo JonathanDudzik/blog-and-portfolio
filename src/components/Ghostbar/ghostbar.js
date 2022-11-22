@@ -35,15 +35,17 @@ const Ghostbar = () => {
           alt="Logo"
         />    
       </a>
-      {data.site.siteMetadata.links.map(link => (
-        <Link 
-          to={link.url}
-          key={link.url}
-          style={{ paddingRight: `5%`, fontSize: `large`, color: `#fff` }}
-        >
-          {link.text}
-        </Link>
-      ))}
+      <div className={styles.ghostbarLinks}>
+        {data.site.siteMetadata.links.map(link => (
+          <Link 
+            to={link.url}
+            key={link.url}
+            style={{ paddingRight: `20px`, fontSize: `large`, color: `#fff` }}
+          >
+            {link.text}
+          </Link>
+        ))}
+      </div>
     </div>
   )
 }

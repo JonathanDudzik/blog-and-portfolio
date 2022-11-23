@@ -1,16 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: "Jonathan's Portfolio",
-    description: "Jonathan's personal portfolio",
+    title: "Game and Cloud Architecture with Go",
+    description: "Learn Go and Cloud architecture by creating multi-platform games ",
     links: [
       {
         text: "Home",
         url: "/",
-      },
-      {
-        text: "Blog",
-        // this link can be the latest post slug
-        url: "/entries/welcome",
       },
       {
         text: "Resume",
@@ -18,15 +13,5 @@ module.exports = {
       }
     ]
   },
-  plugins: [
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `src`,
-        path: `${__dirname}/src/`,
-      },
-    },
-    `gatsby-transformer-remark`,
-    "gatsby-plugin-gatsby-cloud"
-  ],
+  plugins: ["gatsby-plugin-gatsby-cloud"]
 };

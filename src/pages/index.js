@@ -1,11 +1,14 @@
 import * as React from "react"
+import { Link } from "gatsby"
+
+// import components
 import Layout from "../components/Layout/layout"
 import Ghostbar from "../components/Ghostbar/ghostbar"
 
-// CSS Module import
+// import CSS Module 
 import * as styles from "./index.module.css"
 
-// import image
+// import images
 import heroLogo from "../images/binary-sm.png"
 import avatar from "../images/avatar.png"
 import gatsby from "../images/Gatsby.svg"
@@ -47,11 +50,11 @@ const Hero = () => (
           Hello! My name is Jonathan Wesley Dudzik.
         </h2>
         <p>
-          I am a software developer, UI/UX aficionado, 
-          and agile practicioner.
-        </p> 
+          Professionally, I am a software developer, UI/UX aficionado, and agile practitioner.
+          This site is where I choose to publish the courses that I create. 
+        </p>
         <p>
-          Check out my blog to read about React, Typescript, and Rails and a JSON API.
+          <Link to="/module/pong">Course #1: Pong</Link>
         </p>
       </div>
     </div>
